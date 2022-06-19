@@ -1,12 +1,9 @@
 import "./chart.scss";
 import {
    AreaChart,
-   Line,
    XAxis,
-   YAxis,
    CartesianGrid,
    Tooltip,
-   Legend,
    ResponsiveContainer,
    Area,
 } from "recharts";
