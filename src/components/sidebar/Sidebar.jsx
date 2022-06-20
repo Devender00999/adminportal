@@ -12,12 +12,15 @@ import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydre
 import SettingsApplicationsOutlinedIcon from "@mui/icons-material/SettingsApplicationsOutlined";
 
 import "./sidebar.scss";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
    return (
       <div className="sidebar">
          <div className="top">
-            <span className="logo">Admin Portal</span>
+            <Link to="/" style={{ textDecoration: "none" }}>
+               <span className="logo">Admin Portal</span>
+            </Link>
          </div>
          <hr />
          <div className="center">
@@ -28,14 +31,19 @@ const Sidebar = () => {
                   <span>Dashboard</span>
                </li>
                <p className="title">LISTS</p>
-               <li>
-                  <PersonOutlineOutlinedIcon className="icon" />
-                  <span>Users</span>
-               </li>
-               <li>
-                  <StoreOutlinedIcon className="icon" />
-                  <span>Products</span>
-               </li>
+               <Link to="/users" style={{ textDecoration: "none" }}>
+                  <li>
+                     <PersonOutlineOutlinedIcon className="icon" />
+                     <span>Users</span>
+                  </li>
+               </Link>
+
+               <Link to="/products" style={{ textDecoration: "none" }}>
+                  <li>
+                     <StoreOutlinedIcon className="icon" />
+                     <span>Products</span>
+                  </li>
+               </Link>
                <li>
                   <CreditCardOutlinedIcon className="icon" />
                   <span>Orders</span>
