@@ -23,8 +23,14 @@ const Datatable = () => {
 
    return (
       <div className="datatable">
-         <div className="datatableTitle">Add new user </div>
+         <div className="datatableTitle">
+            Add new user{" "}
+            <Link className="link" to="/products/new">
+               Add New
+            </Link>
+         </div>
          <DataGrid
+            className="datagrid "
             rows={userRows}
             columns={userColumns.concat(actionColumn)}
             pageSize={5}

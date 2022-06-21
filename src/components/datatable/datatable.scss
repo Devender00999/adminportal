@@ -2,6 +2,27 @@
    height: 375px;
    padding: 20px;
 
+   .datatableTitle {
+      width: 100%;
+      font-size: 24px;
+      color: gray;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .link {
+         text-decoration: none;
+         color: green;
+         font-size: 16px;
+         font-weight: normal;
+         padding: 5px;
+         border-radius: 5px;
+         cursor: pointer;
+         border: 1px solid green;
+      }
+   }
+
    .cellWithImg {
       display: flex;
       align-items: center;
@@ -52,5 +73,8 @@
          color: crimson;
          border: 1px dotted rgba(220, 20, 60, 0.6);
       }
+   }
+   input {
+      background-color: transparent;
    }
 }
